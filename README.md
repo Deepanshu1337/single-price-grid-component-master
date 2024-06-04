@@ -26,8 +26,8 @@ Create a single price grid component that displays pricing plans and features in
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Deepanshu1337/single-price-grid-component-master)
+- Live Site URL: [Add live site URL here](https://deepanshu1337.github.io/single-price-grid-component-master/)
 
 ## My process
 
