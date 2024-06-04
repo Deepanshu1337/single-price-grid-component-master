@@ -1,0 +1,139 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsla(179, 62%, 43%, 0.842);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+.flex-container {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    margin: 0;
+
+
+}
+
+footer {
+    /* position:sticky;
+    bottom: 0; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid-container {
+    /* overflow: hidden; */
+    background-color: #fff;
+    max-width: 60rem;
+    display: grid;
+    grid-template-rows: 220px 260px;
+    grid-template-columns: 1fr;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.primary {
+    padding: 2rem;
+}
+
+.primary h1 {
+    color: var(--cyan);
+    font-size: 2.5rem;
+}
+
+.primary h3 {
+    color: var(--Bright-Yellow);
+    font-size: 1.5rem;
+}
+
+.primary p {
+    color: var(--Grayish-Blue);
+    font-size: 1.6rem;
+}
+
+.secondary {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+.secondary h3{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.secondary p {
+    font-size: 1.6rem;
+}
+
+.sub-section {
+    padding: 2rem;
+    color: hsl(204, 43%, 93%);
+}
+
+.big {
+    font-size: 3rem;
+}
+
+.darker {
+    color: #C2C6CD;
+}
+
+button {
+
+    width: 24rem;
+    height: 5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: var(--Bright-Yellow);
+    color: #F7F9BC;
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.sub-section:nth-child(1){
+    background-color: #2aa3a1;
+}
+.sub-section:nth-child(2){
+    background-color: var(--cyan);
+
+}
+
+.sub-section :nth-child(2) p {
+   
+    color: hsl(204, 43%, 93%);
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    font-size: 1.2rem;
+    color: #A8EBF4;
+    line-height: 1.4;
+}
+@media  screen and (max-width:760px) {
+   .flex-container {
+            min-height: 80vh;
+        }
+    
+        .grid-container {
+            width: 350px;
+            grid-template-rows: 0.5fr 1fr;
+        }
+    
+        .secondary {
+            grid-template-columns: 1fr;
+        }
+}
